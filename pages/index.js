@@ -41,7 +41,7 @@ export default function HomePage(props) {
 
 
   const info = {
-    name: "Thaylon Haniel",
+    name: "Th0Gy",
     GitHubName: "ThaylonHani",
   };
 
@@ -74,15 +74,18 @@ export default function HomePage(props) {
                 `}
       </style>
                     {router.asPath == "/?status=401"? <p style={{ color: "red"}}>SENHA INCORRETA TENTE NOVAMENTE</p> : false}
+      <Link href={`https://github.com/${info.GitHubName}/`} style={{color:"inherit", textDecoration:"none", }} target="_blank">
       <img
         src={`https://github.com/${info.GitHubName}.png`}
         style={{
           width: "17%",
           borderRadius: "20%",
-          border: "2px solid #184059",
+          border: "5px solid #184059"
+          
         }}
       />
       <h1>{info.name}</h1>
+      </Link>
       <section
         style={{
           display: "flex",

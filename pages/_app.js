@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Head from "next/head";
 export default function MyApp({ Component, pageProps }) {
     return (
         <>
@@ -17,7 +18,11 @@ export default function MyApp({ Component, pageProps }) {
 
                 `}
             </style>
-           
+            <Head>
+                <title>
+                    Rick and Morty List
+                </title>
+           </Head>
         <Component {...pageProps} />
         </>
     )
